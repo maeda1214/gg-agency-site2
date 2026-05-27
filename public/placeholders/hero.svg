@@ -1,0 +1,8 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#F7F5F1"/>
+  <rect x="120" y="120" width="960" height="1160" fill="#151515"/>
+  <circle cx="600" cy="520" r="250" fill="#D8D1C7"/>
+  <rect x="270" y="760" width="660" height="300" fill="#FFFDF8"/>
+  <text x="300" y="900" fill="#151515" font-family="Georgia, serif" font-size="82">GG Agency</text>
+  <text x="305" y="970" fill="#9A7A48" font-family="Arial, sans-serif" font-size="28" letter-spacing="12">TALENT / CULTURE / GLOBAL</text>
+</svg>
