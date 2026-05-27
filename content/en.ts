@@ -22,10 +22,6 @@ export const enContent: SiteContent = {
       { label: "View Talent", href: "/en/talent", event: "hero_view_talent" },
       { label: "Discuss a Project", href: "/en/contact", event: "hero_contact" }
     ],
-    applyCta: {
-      title: "Become a Talent / Model",
-      note: "Beginners welcome"
-    },
     note: "Tokyo based. Available for brand campaigns, appearances, and international productions."
   },
   sections: {
@@ -36,7 +32,7 @@ export const enContent: SiteContent = {
     },
     talent: { eyebrow: "Talent", title: "Presence carried by image.", description: "A curated roster for luxury, editorial, and international-facing projects." },
     global: {
-      eyebrow: "For Brands",
+      eyebrow: "Brand Partnerships",
       title: "Built for Japanese and international productions.",
       description: "We support bilingual communication, production coordination, and proposals shaped around brand tone.",
       points: ["Fashion / Beauty", "Hotel / Travel", "Event Appearance", "Global Campaign"]
