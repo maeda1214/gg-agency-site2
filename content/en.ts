@@ -14,16 +14,22 @@ export const enContent: SiteContent = {
     { label: "Brands", href: "/en#brands" },
     { label: "Contact", href: "/en/contact" }
   ],
-  hero: {
-    eyebrow: "High-end model and talent agency",
-    title: "A refined presence for global brand imagery.",
-    description: "GG Agency connects refined Japanese models and talent with fashion, beauty, hospitality, event, and international projects.",
-    ctas: [
-      { label: "View Talent", href: "/en/talent", event: "hero_view_talent" },
-      { label: "Discuss a Project", href: "/en/contact", event: "hero_contact" }
-    ],
-    note: "Tokyo based. Available for brand campaigns, appearances, and international productions."
+ hero: {
+  eyebrow: "High-end model and talent agency",
+  title: "A refined presence for global brand imagery.",
+  description:
+    "GG Agency connects refined Japanese models and talent with fashion, beauty, hospitality, and international creative projects.",
+  ctas: [
+    { label: "View Talent", href: "/en/talent", event: "hero_view_talent" },
+    { label: "Contact Us", href: "/en/contact", event: "hero_contact" }
+  ],
+  applyCta: {
+    title: "Become a Talent / Model",
+    note: "Beginners welcome",
   },
+  note:
+    "Tokyo based. Available for brand campaigns, appearances, and international productions.",
+},
   sections: {
     services: {
       eyebrow: "Services",
