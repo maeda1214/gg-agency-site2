@@ -174,6 +174,7 @@ export const talents: Talent[] = [
 },
 {
   name: "逢坂 瞳",
+  hidden: true,
   englishName: "Hitomi Ousaka",
   slug: "hitomi-ousaka",
   title: "MODEL",
@@ -187,6 +188,7 @@ export const talents: Talent[] = [
 },
 {
   name: "綾瀬 麻衣子",
+  hidden: true,
   englishName: "Maiko Ayase",
   slug: "maiko-ayase",
   title: "MODEL",

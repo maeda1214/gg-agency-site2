@@ -2,6 +2,7 @@ export type Talent = {
   name: string;
   englishName: string;
   slug: string;
+  hidden?: boolean;
   title: "MODEL";
   instagram: string;
   x: string;

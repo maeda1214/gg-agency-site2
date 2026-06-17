@@ -105,8 +105,8 @@ export function HomePage({ content }: { content: SiteContent }) {
         </SectionHeader>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {featuredTalents.map((talent) => {
-            const name = content.locale === "ja" ? talent.name : talent.englishName;
+          {featuredTalents.filter((talent) => !talent.hidden).map((talent) => {
+  const name = content.locale === "ja" ? talent.name : talent.englishName;
 
             return (
               <Link key={talent.slug} href={`${talentHref}/${talent.slug}`} className="focus-ring group block overflow-hidden border border-white/10 bg-white/[0.03]">
