@@ -172,33 +172,6 @@ export const talents: Talent[] = [
     "An elegant model with a calm and polished atmosphere. Suitable for hospitality, beauty, fashion, and global visual campaigns.",
   gallery: ["/talent14.jpg"],
 },
-{
-  name: "逢坂 瞳",
-  hidden: true,
-  englishName: "Hitomi Ousaka",
-  slug: "hitomi-ousaka",
-  title: "MODEL",
-  instagram: "https://www.instagram.com/hitomi_ousakagg/",
-  x: "https://x.com/Hitomi_Ousaka",
-  socialUrl: "https://www.instagram.com/hitomi_ousakagg/",
-  image: "/talent15.jpg",
-  profile:
-    "A model with a natural presence and expressive look. Suitable for lifestyle, portrait, beauty, and brand storytelling projects.",
-  gallery: ["/talent15.jpg"],
-},
-{
-  name: "綾瀬 麻衣子",
-  hidden: true,
-  englishName: "Maiko Ayase",
-  slug: "maiko-ayase",
-  title: "MODEL",
-  instagram: "",
-  x: "https://x.com/maiko_ayase",
-  socialUrl: "https://x.com/maiko_ayase",
-  image: "/talent16.jpg",
-  profile:
-    "A refined model with a sophisticated impression. Suitable for fashion, wellness, beauty, and premium campaign visuals.",
-  gallery: ["/talent16.jpg"],
-},
+
    
 ];
