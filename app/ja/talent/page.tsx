@@ -19,7 +19,11 @@ export default function JaTalentPage() {
           静かな存在感をまとうモデルたち。
         </h1>
       </section>
-      <TalentRoster talents={talents} locale="ja" basePath="/ja/talent" />
+     <TalentRoster
+  talents={talents.filter((talent) => !talent.hidden)}
+  locale="ja"
+  basePath="/ja/talent"
+/>
       <TalentContactCta href="/ja/contact" title="ブランド撮影、イベント出演、キャスティングのご相談はこちら。" label="案件を相談する" />
     </div>
   );
