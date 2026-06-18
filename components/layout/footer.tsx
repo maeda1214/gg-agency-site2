@@ -23,6 +23,8 @@ export function Footer({ content }: { content: SiteContent }) {
             <Link href={`/${content.locale}#works`}>Works</Link>
             <Link href={`/${content.locale}#brands`}>Brands</Link>
             <Link href={`/${content.locale}/contact`}>Contact</Link>
+            <Link href={`/${content.locale}/about`}>About</Link>
+            <Link href={`/${content.locale}/privacy`}>Privacy Policy</Link>
           </div>
         </div>
         <div>
