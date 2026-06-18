@@ -21,17 +21,41 @@ const services = {
 
 const proofItems = {
   ja: [
-    "MODEL CASTING",
-    "BRAND SHOOTING",
-    "SNS PROMOTION",
-    "GLOBAL PROJECTS"
+    {
+      title: "MODEL CASTING",
+      subtitle: "Fashion / Beauty / Lifestyle",
+    },
+    {
+      title: "BRAND SHOOTING",
+      subtitle: "Campaign / Editorial / Visual",
+    },
+    {
+      title: "SNS PROMOTION",
+      subtitle: "Instagram / YouTube / TikTok",
+    },
+    {
+      title: "GLOBAL PROJECTS",
+      subtitle: "Overseas / Bilingual / International",
+    },
   ],
   en: [
-    "MODEL CASTING",
-    "BRAND SHOOTING",
-    "SNS PROMOTION",
-    "GLOBAL PROJECTS"
-  ]
+    {
+      title: "MODEL CASTING",
+      subtitle: "Fashion / Beauty / Lifestyle",
+    },
+    {
+      title: "BRAND SHOOTING",
+      subtitle: "Campaign / Editorial / Visual",
+    },
+    {
+      title: "SNS PROMOTION",
+      subtitle: "Instagram / YouTube / TikTok",
+    },
+    {
+      title: "GLOBAL PROJECTS",
+      subtitle: "Overseas / Bilingual / International",
+    },
+  ],
 };
 
 const workImages = [
@@ -159,10 +183,19 @@ export function HomePage({ content }: { content: SiteContent }) {
         </div>
         <div className="mt-8 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-4">
           {proof.map((item) => (
-            <div key={item} className="bg-[#050505] px-5 py-5 text-sm font-semibold uppercase tracking-[0.18em] text-white/70">
-              {item}
-            </div>
-          ))}
+  <div
+    key={item.title}
+    className="bg-[#050505] px-5 py-5"
+  >
+    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
+      {item.title}
+    </p>
+
+    <p className="mt-2 text-xs uppercase tracking-[0.16em] text-[#c8a86a]">
+      {item.subtitle}
+    </p>
+  </div>
+))}
         </div>
       </section>
 
