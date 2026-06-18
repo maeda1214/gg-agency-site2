@@ -20,8 +20,18 @@ const services = {
 };
 
 const proofItems = {
-  ja: ["Luxury mood", "Editorial casting", "Bilingual support", "Production ready"],
-  en: ["Luxury mood", "Editorial casting", "Bilingual support", "Production ready"]
+  ja: [
+    "MODEL CASTING",
+    "BRAND SHOOTING",
+    "SNS PROMOTION",
+    "GLOBAL PROJECTS"
+  ],
+  en: [
+    "MODEL CASTING",
+    "BRAND SHOOTING",
+    "SNS PROMOTION",
+    "GLOBAL PROJECTS"
+  ]
 };
 
 const workImages = [
