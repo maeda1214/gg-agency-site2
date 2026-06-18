@@ -11,6 +11,7 @@ export const jaContent: SiteContent = {
   nav: [
     { label: "Talent", href: "/ja/talent" },
     { label: "Services", href: "/ja#services" },
+    { label: "Capabilities", href: "/ja/capabilities" },
     { label: "Works", href: "/ja#works" },
     { label: "Brands", href: "/ja#brands" },
     { label: "Contact", href: "/ja/contact" }

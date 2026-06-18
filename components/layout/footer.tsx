@@ -20,6 +20,7 @@ export function Footer({ content }: { content: SiteContent }) {
           <div className="mt-4 grid gap-3 text-sm text-pearl/75">
             <Link href={`/${content.locale}/talent`}>Talent</Link>
             <Link href={`/${content.locale}#services`}>Services</Link>
+            <Link href={`/${content.locale}/capabilities`}>Capabilities</Link>
             <Link href={`/${content.locale}#works`}>Works</Link>
             <Link href={`/${content.locale}#brands`}>Brands</Link>
             <Link href={`/${content.locale}/contact`}>Contact</Link>

@@ -10,6 +10,7 @@ export const enContent: SiteContent = {
   nav: [
     { label: "Talent", href: "/en/talent" },
     { label: "Services", href: "/en#services" },
+    { label: "Capabilities", href: "/en/capabilities" },
     { label: "Works", href: "/en#works" },
     { label: "Brands", href: "/en#brands" },
     { label: "Contact", href: "/en/contact" }
