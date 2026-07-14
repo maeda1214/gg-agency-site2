@@ -112,8 +112,10 @@ export function HomePage({ content }: { content: SiteContent }) {
                 {content.labels.booking}
               </LuxuryButton>
             </div>
-            <Link
-              href={applyHref}
+            <a
+              href="https://www.g1g1g1.com/"
+              target="_blank"
+              rel="noreferrer"
               className="focus-ring group mt-5 inline-flex min-h-16 w-full max-w-md flex-col justify-center border border-[#c8a86a]/70 bg-black/72 px-5 py-4 text-[#f3dfad] shadow-[0_18px_48px_rgba(0,0,0,0.22)] transition hover:border-[#e3c983] hover:bg-[#c8a86a] hover:text-black sm:mt-6 sm:w-auto sm:min-w-[360px] sm:px-6"
               {...trackingAttrs("hero_apply_link")}
             >
@@ -122,7 +124,7 @@ export function HomePage({ content }: { content: SiteContent }) {
                 <ArrowRight aria-hidden className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
               </span>
               <span className="mt-1 text-xs font-medium leading-5 tracking-[0.12em] text-[#d8bd7d]/78 transition group-hover:text-black/70 sm:text-sm">{content.hero.applyCta.note}</span>
-            </Link>
+            </a>
             <p className="mt-8 max-w-xl border-l border-[#c8a86a]/60 pl-4 text-xs uppercase leading-6 tracking-[0.2em] text-white/48">
               {content.hero.note}
             </p>
