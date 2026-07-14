@@ -246,13 +246,24 @@ export function HomePage({ content }: { content: SiteContent }) {
                   {applyLabels.line}
                 </a>
                 <Link
-                  href={applyHref}
-                  className="focus-ring inline-flex text-xs font-semibold leading-6 tracking-[0.12em] text-white/52 transition hover:text-[#e3c983]"
-                  {...trackingAttrs("apply_form_alternative")}
-                >
-                  {applyLabels.applyAlternative}
-                </Link>
-                <p className="text-xs leading-6 tracking-[0.08em] text-white/42">{applyLabels.qrNote}</p>
+                 href={applyHref}
+                 className="..."
+                 >
+                 {applyLabels.applyAlternative}
+                 </Link>
+
+                 <a
+                 href="https://www.g1g1g1.com/"
+                 target="_blank"
+                 rel="noreferrer"
+                 className="inline-flex text-xs font-semibold tracking-[0.12em] text-[#c8a86a] underline underline-offset-4 hover:text-white"
+                 >
+                 モデル応募について詳しくはこちら
+                 </a>
+
+                <p className="text-xs leading-6 tracking-[0.08em] text-white/42">
+  {applyLabels.qrNote}
+                </p>
               </div>
               <a
                 aria-label={applyLabels.qrAlt}
