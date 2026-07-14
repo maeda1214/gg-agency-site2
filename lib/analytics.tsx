@@ -8,25 +8,53 @@ export function AnalyticsScripts() {
     <>
       {gaId ? (
         <>
-          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="afterInteractive" />
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            strategy="afterInteractive"
+          />
           <Script id="ga-placeholder" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
+              window.gtag = gtag;
               gtag('js', new Date());
               gtag('config', '${gaId}');
             `}
           </Script>
+
+          <Script id="ga-click-events" strategy="afterInteractive">
+            {`
+              document.addEventListener('click', function (event) {
+                const target = event.target.closest('[data-analytics-event]');
+                if (!target || typeof window.gtag !== 'function') return;
+
+                window.gtag('event', target.dataset.analyticsEvent, {
+                  link_url: target.href || '',
+                  link_text: target.innerText || ''
+                });
+              });
+            `}
+          </Script>
         </>
       ) : null}
+
       {metaPixelId ? (
         <Script id="meta-pixel-placeholder" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-            (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;
+            n.push=n;
+            n.loaded=!0;
+            n.version='2.0';
+            n.queue=[];
+            t=b.createElement(e);
+            t.async=!0;
+            t.src=v;
+            s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s);
+            }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
             fbq('init', '${metaPixelId}');
             fbq('track', 'PageView');
           `}
@@ -38,6 +66,6 @@ export function AnalyticsScripts() {
 
 export function trackingAttrs(event: string) {
   return {
-    "data-analytics-event": event
+    "data-analytics-event": event,
   };
 }
