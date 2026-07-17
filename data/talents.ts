@@ -121,18 +121,23 @@ export const talents: Talent[] = [
     profile: "A model with intelligent and refined expression. Suitable for fashion, beauty, lifestyle, and editorial-style visual projects.",
     gallery: ["/talent10.jpg"]
   },
-  {
-    name: "森 かおり",
-    englishName: "Kaori Mori",
-    slug: "kaori-mori",
-    title: "MODEL",
-    instagram: "",
-    x: "",
-    socialUrl: "",
-    image: "/talent11.jpg",
-    profile: "A model with a calm and elegant atmosphere. Suitable for lifestyle, beauty, hospitality, and premium brand communication.",
-    gallery: ["/talent11.jpg"]
-  },
+   {
+  name: "森 かおり",
+  englishName: "Kaori Mori",
+  slug: "kaori-mori",
+  title: "MODEL",
+  instagram: "",
+  x: "",
+  socialUrl: "",
+  image: "/talent11.jpg",
+  profile:
+    "A model with a calm and elegant atmosphere. Suitable for lifestyle, beauty, hospitality, and premium brand communication.",
+  gallery: [
+    "/talent11-1.jpg",
+    "/talent11-2.jpg",
+    "/talent11-3.jpg",
+  ],
+ },
   {
   name: "紗々原 ゆり",
   englishName: "Yuri Sasahara",
